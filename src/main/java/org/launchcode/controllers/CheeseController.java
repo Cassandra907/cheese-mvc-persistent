@@ -1,6 +1,6 @@
 package org.launchcode.controllers;
 
-import org.launchcode.models.Cheese;
+import org.launchcode.models.forms.Cheese;
 import org.launchcode.models.CheeseType;
 import org.launchcode.models.data.CheeseDao;
 import org.springframework.beans.factory.annotation.Autowired;
