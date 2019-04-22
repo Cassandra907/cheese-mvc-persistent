@@ -1,12 +1,12 @@
 package org.launchcode.models.forms;
 
-import org.launchcode.models.forms.Category;
+import org.launchcode.models.CheeseType;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.awt.*;
-import java.util.List;
 
 /**
  * Created by LaunchCode
@@ -26,11 +26,7 @@ public class Cheese {
     @Size(min=1, message = "Description must not be empty")
     private String description;
 
-    @ManyToOne
-    private Category category;
-
-    @ManyToMany(mappedBy = "cheeses")
-    private List<Menu> menus;
+    private CheeseType type;
 
     public Cheese(String name, String description) {
         this.name = name;
@@ -38,10 +34,6 @@ public class Cheese {
     }
 
     public Cheese() { }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public int getId() {
         return id;
@@ -63,13 +55,11 @@ public class Cheese {
         this.description = description;
     }
 
-    public Category getCategory() {
-        return category;
+    public CheeseType getType() {
+        return type;
     }
 
-    public void setCategory(Category category) {
-        this.category = category;
+    public void setType(CheeseType type) {
+        this.type = type;
     }
-
-
 }

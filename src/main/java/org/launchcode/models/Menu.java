@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
 @Entity
 public class Menu {
 
@@ -21,15 +20,16 @@ public class Menu {
     private int id;
 
     @NotNull
-    @Size(min=3, max=15)
+    @Size(min = 3, max = 15)
     private String name;
 
     @ManyToMany
     private List<Cheese> cheeses = new ArrayList<>();
 
-    public Menu(){}
+    public Menu() {
+    }
 
-    public Menu(String name){
+    public Menu(String name) {
         this.name = name;
     }
 
@@ -49,7 +49,7 @@ public class Menu {
         return cheeses;
     }
 
-    public void addItem(Cheese item){
+    public void addItem(Cheese item) {
         cheeses.add(item);
     }
 }
