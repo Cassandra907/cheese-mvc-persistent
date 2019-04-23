@@ -32,10 +32,6 @@ public class Category {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
@@ -44,7 +40,15 @@ public class Category {
         this.name = name;
     }
 
-    public List<Cheese> getCheeses() {
+    public List<Cheese> getCheeses(){
         return cheeses;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setCheeses(List<Cheese> cheeses) {
+        this.cheeses = cheeses;
     }
 }

@@ -28,28 +28,29 @@ public class Menu {
 
     public Menu() {
     }
-
-    public Menu(String name) {
-        this.name = name;
-    }
-
     public int getId() {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public List<Cheese> getCheeses() {
+    public List<Cheese> getCheeses(){
         return cheeses;
     }
 
-    public void addItem(Cheese item) {
+    public void addItem(Cheese item){
         cheeses.add(item);
     }
+
+    public String getName() {
+        return name;
+    }
 }
+
+
