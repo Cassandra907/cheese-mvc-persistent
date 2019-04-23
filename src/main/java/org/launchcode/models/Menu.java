@@ -1,7 +1,5 @@
 package org.launchcode.models;
 
-import org.launchcode.models.forms.Cheese;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;

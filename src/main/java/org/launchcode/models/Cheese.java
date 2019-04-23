@@ -1,7 +1,5 @@
-package org.launchcode.models.forms;
+package org.launchcode.models;
 
-import groovy.lang.Category;
-import org.launchcode.models.Menu;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
